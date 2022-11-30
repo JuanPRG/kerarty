@@ -86,7 +86,7 @@ ul {
 .banner {
     height: 28rem;
     width: auto;
-    background-image: url(/Imagen1.jpg);
+    background-image: url(/assets/images/Imagen1.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -103,5 +103,45 @@ ul {
     text-align: center;
     font-family: Pacifico, cursive;
 }
+
+.diferenciales {
+    display: flex;
+    gap:0 1rem ;
+    justify-content:space-around;
+    margin: 3rem 9rem;
+}
+
+.diferenciales-icon{
+    border-radius: 100%;
+    border: solid;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5em;
+    box-shadow: 0 0 0 7px white, 0 0 0 8px #e0e0e0;
+    margin: 0 0 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diferenciales-icon-icon{
+    width: 4rem;
+    height: 4rem;
+}
+
+.diferenciales-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+    
+}
+
+.diferenciales-descripcion {
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
 
 
