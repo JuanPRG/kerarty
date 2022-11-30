@@ -86,7 +86,8 @@ ul {
 .banner {
     height: 28rem;
     width: auto;
-    background-image: url(/assets/images/Imagen1.jpg);
+    background-image: url("/assets/images/Imagen1.jpg");
+    
     background-position: center center;
     background-size: cover;
     display: flex;
