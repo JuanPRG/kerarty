@@ -26,19 +26,19 @@ ul {
 .logo-header {
     width: 4rem;
     height: 4rem;
-     padding: 1.5em 0em 1.35em 1em;
+     /* padding: 1.5em 0em 1.35em 1em; */
 
 }
 
 .nav{
     display: flex;
-    height: auto;
     width: 100%;
     background-color: #333;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
 }
 
 .nav-left {
@@ -50,7 +50,7 @@ ul {
 .nav-right {
     display: flex;
     align-items: center;
-    font-size: 1.15rem;
+    justify-content: space-between;
   
 }
 
@@ -61,23 +61,29 @@ ul {
 
 .nav-li{
     padding: 1.5em 0.5em 1.35em 0.5em;
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
 }
 
 .navleft-li {
-    padding: 1.5em 0.5em 1.35em 0.5em;
+    padding: 1.5em 1em 0.5em 0em;
     
 }
 
-.nav-leftwrap{
-    margin: 0 1rem;
-    flex: 1;
+.nav-rightwrap{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
 }
 
-#kerarty-header {
+.nav-leftwrap{
+    /* margin: 0 1rem; */
+    /* flex: 1; */
+}
+
+#terarty-header {
     color: #c0c0c0;
     font-weight: 900;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: "Open sans", sans-serif;
 }
 
@@ -107,10 +113,20 @@ ul {
 }
 
 .diferenciales {
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     gap:0 1rem ;
     justify-content:space-around;
-    margin: 3rem 9rem;
+    margin: 3rem 9rem; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .diferenciales-icon{
@@ -130,15 +146,28 @@ ul {
 .diferenciales-icon-icon{
     width: 4rem;
     height: 4rem;
+    
+}
+
+.diferenciales-icon-main {
+    display: flex;
+    justify-content: center;
 }
 
 .diferenciales-box {
-    text-align: center;
+    /* text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 2rem;
-    width: 25%;
+    width: 25%; */
+
+    
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 70%;
+    margin-top: 2rem;
     
 }
 
@@ -152,6 +181,47 @@ ul {
     font-weight: bolder;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-header {
+        width: 4rem;
+        height: 4rem;
+         padding: 1.5em 0em 1.35em 1em;
+    
+    }
+
+    .nav-left {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    .navleft-li {
+        padding: 1.5em 0.5em 1.35em 0.5em;
+    }
+
+    .diferenciales {
+        display: flex;
+        flex-direction: row;
+        gap:0 1rem ;
+        justify-content:space-around;
+        margin: 3rem 9rem;
+    }
+
+    .diferenciales-box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2rem;
+        width: 25%;    
+    }
 }
 
 
